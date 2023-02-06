@@ -1,10 +1,12 @@
 <h2>My Heroes</h2>
-<div class="container">
-  <ul class="heroes">
+<div>
+  <ul class="heroes flex justify-content-center flex-wrap gap-5">
     <li *ngFor="let hero of heroes">
+      <button pButton type="button" class="p-button-lg">
         <a routerLink="/detail/{{hero.id}}">
           <span>{{hero.id}}</span> {{hero.name}}
         </a>
+      </button>
     </li>
   </ul>
 </div>

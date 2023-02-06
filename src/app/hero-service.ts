@@ -12,13 +12,13 @@ export class HeroService {
 
     getHeroes():Observable<Hero[]> {
         const heroes = of (HEROES)
-        this.messageService.add('Fetched Heroes succesfully!')
+        this.messageService.add({severity: "success", summary: "Success!", detail: "Heroes fetched successfully!"})
         return heroes
     }
 
     getHero(id: number): Observable<Hero> {
         const hero = HEROES.find(element => element.id === id)!
-        this.messageService.add(`HeroService: fetched hero id=${id}`)
+        this.messageService.add({severity: "success", summary: "Success!", detail: `Fetched hero with id ${hero.id}`})
         return of (hero)
     }
 }

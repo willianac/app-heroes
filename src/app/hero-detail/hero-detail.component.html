@@ -1,9 +1,9 @@
 <div *ngIf="hero">
-    <h2>{{hero.name | uppercase}} Details</h2>
-    <div>id: {{hero.id}}</div>
-    <div>
-      <label for="hero-name">Hero name: </label>
-      <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
-    </div>
-    <button class="btn btn-secondary" (click)="goBack()">Go back</button>
-  </div>
+  <p-card header="{{hero.name}} details" [style]="{'width': '15rem', 'margin': '4rem auto 0 auto'}">
+      <p>ID: {{hero.id}}</p>
+      <input [(ngModel)]="hero.name" placeholder="name" pInputText class="p-inputtext-sm">
+      <ng-template pTemplate="footer">
+        <button class="p-button-sm p-button-secondary" (click)="goBack()" pButton>Go back</button>
+      </ng-template>
+  </p-card>
+</div>
