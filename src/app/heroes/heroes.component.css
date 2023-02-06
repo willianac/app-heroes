@@ -1,0 +1,21 @@
+.container > ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.container > ul > li {
+    width: 140px;
+    height: 60px;
+    border: 1px solid;
+    text-align: center;
+}
+.container > ul > li > a {
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.container > ul > li:hover {
+    background-color: rgb(36, 33, 33);
+}
