@@ -1,4 +1,4 @@
 <div *ngIf="messageService.messages.length">
-    <button type="button" (click)="messageService.clear()">Clear Messages</button>
-    <div *ngFor="let message of messageService.messages" class="alert alert-success">{{message}}</div>
+    <button type="button" (click)="messageService.clear()" pButton class="p-button-outlined">Clear Messages</button>
+    <p-messages [(value)]="messageService.messages"></p-messages>
 </div>
