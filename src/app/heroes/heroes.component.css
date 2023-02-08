@@ -1,19 +1,37 @@
-
-
 .heroes {
     list-style: none;
 }
 
-.heroes > li > button > a {
+.heroes > li > a {
     text-decoration: none;
-    color: #ffffff;
-    font-weight: 600;
 }
 
+.button > span, p {
+    font-weight: 600;
+}
 h2 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     font-size: 32px;
     margin-bottom: 1rem;
     margin-top: 5rem;
+}
+
+.p-float-label > label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-delete {
+    position: relative;
+    bottom: 36px;
+    right: 6px;
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-delete:hover {
+    color: red;
 }
