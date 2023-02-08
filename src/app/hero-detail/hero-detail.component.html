@@ -3,7 +3,10 @@
       <p>ID: {{hero.id}}</p>
       <input [(ngModel)]="hero.name" placeholder="name" pInputText class="p-inputtext-sm">
       <ng-template pTemplate="footer">
-        <button class="p-button-sm p-button-secondary" (click)="goBack()" pButton>Go back</button>
+        <div class="flex justify-content-between">
+          <button class="p-button-sm p-button-secondary" (click)="save()" pButton>Save</button>
+          <button class="p-button-sm p-button-outlined" (click)="goBack()" pButton>Go back</button>
+        </div>
       </ng-template>
   </p-card>
 </div>
